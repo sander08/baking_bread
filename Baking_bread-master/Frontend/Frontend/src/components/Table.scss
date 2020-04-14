@@ -1,0 +1,57 @@
+.Table {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__head {
+    tr {
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+
+      td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        border-right: 1px solid rgba(255, 255, 255, 0.6);
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: bold;
+
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-flow: column nowrap;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    tr {
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-right: -17px;
+
+      td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        border-right: 1px solid rgba(255, 255, 255, 0.6);
+        font-size: 16px;
+        line-height: 18px;
+
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+  }
+}

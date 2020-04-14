@@ -1,0 +1,23 @@
+.Input {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+
+  &__field {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin-top: 5px;
+    min-height: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    outline: none;
+  }
+}

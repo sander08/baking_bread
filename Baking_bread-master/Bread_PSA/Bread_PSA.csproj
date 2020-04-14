@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataAccess\Scripts\CheckAccess.sql" />
+    <None Remove="DataAccess\Scripts\EditOptimalParameters.sql" />
+    <None Remove="DataAccess\Scripts\GetLog.sql" />
+    <None Remove="DataAccess\Scripts\GetOptimalParameters.sql" />
+    <None Remove="DataAccess\Scripts\GetStarterInfo.sql" />
+    <None Remove="DataAccess\Scripts\IncrementAndGetParameter.sql" />
+    <None Remove="DataAccess\Scripts\InsertCustomer.sql" />
+    <None Remove="DataAccess\Scripts\SelectCustomerByLogin.sql" />
+    <None Remove="DataAccess\Scripts\testScript.sql" />
+    <None Remove="DataAccess\Scripts\UpdateElementsStatus.sql" />
+    <None Remove="DataAccess\Scripts\UpdateLog.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DataAccess\Scripts\CheckAccess.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\EditOptimalParameters.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\GetLog.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\GetOptimalParameters.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\GetStarterInfo.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\IncrementAndGetParameter.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\InsertCustomer.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\SelectCustomerByLogin.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\testScript.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\UpdateElementsStatus.sql" />
+    <EmbeddedResource Include="DataAccess\Scripts\UpdateLog.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.30" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+
+</Project>
